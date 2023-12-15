@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundBank Converter</title>
+</head>
+<body>
+    <h1>SoundBank Converter</h1>
+    <form method="post" action="/">
+        <label for="input_filename">Input File Name (in.sfz):</label>
+        <input type="text" name="input_filename" required><br>
+
+        <label for="output_filename">Output File Name (out.sf2):</label>
+        <input type="text" name="output_filename" required><br>
+
+        <button type="submit">Convert</button>
+    </form>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
