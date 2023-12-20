@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Conversion App</title>
+</head>
+<body>
+    <h1>Audio Conversion App</h1>
+    
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="files[]" multiple>
+        <input type="submit" name="upload" value="Convert to FLAC">
+    </form>
+    
+    <form method="post">
+        <label for="sfz_filename">SFZ File Name:</label>
+        <input type="text" name="sfz_filename" required>
+        <input type="submit" name="create_sfz" value="Create SFZ and SF2">
+    </form
